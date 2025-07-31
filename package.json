@@ -1,9 +1,28 @@
 {
-  "name": "gemini",
-  "version": "0.0.0",
-  "private": true,
+  "name": "my-new-project",
+  "version": "1.0.0",
+  "description": "A modern web application project",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "dev": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test",
+    "build": "echo 'Build process here'",
+    "lint": "echo 'Linting process here'"
   },
-  "devDependencies": {}
+  "keywords": ["nodejs", "web", "application"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
